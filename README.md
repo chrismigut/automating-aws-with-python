@@ -18,3 +18,4 @@ Webotron currently has the following Features
 
 - List buckets
 - List objects in a bucket
+- Setup bucket and configure
