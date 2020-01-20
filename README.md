@@ -21,3 +21,4 @@ Webotron currently has the following Features
 - Setup bucket and configure
 - Sync directory tree to bucket
 - Set AWS profile with --profile=<profileName>
+- Output the s3 endpoint when sync files to s3 bucket
