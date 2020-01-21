@@ -15,7 +15,7 @@ class UtilManager:
     def __init__(self):
         """Init UtilManager."""
         self.region_to_endpoints = {}
-        self.load__regions_supported_by_s3()
+        self.load_regions_supported_by_s3()
 
     @staticmethod
     def load_csv_file(file):
@@ -29,7 +29,7 @@ class UtilManager:
         pattern = r's3-website[\.|\-](.*)[\.|\-]amazonaws'
         return re.compile(pattern)
 
-    def load__regions_supported_by_s3(self):
+    def load_regions_supported_by_s3(self):
         """Parse the s3 dataframe into name, host, zone as Endpoint obj."""
         dataframe = self.load_csv_file('.\webotron\s3_bucket_endpoints.csv')
         pattern = self.find_regions_supported_by_s3_pattern()
@@ -50,4 +50,5 @@ class UtilManager:
 
     def get_endpoint(self, region):
         """Return hosted endpoint of s3 bucket given region name."""
+        print(region)
         return self.region_to_endpoints[region]
