@@ -1,0 +1,14 @@
+Etag definition changed in Amazon S3:
+  https://stackoverflow.com/questions/6591047/etag-definition-changed-in-amazon-s3
+
+S3 Customization Reference:
+  https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/s3.html
+
+What is the algorithm to compute the Amazon-S3 Etag for a file larger than 5GB?
+  https://stackoverflow.com/questions/12186993/what-is-the-algorithm-to-compute-the-amazon-s3-etag-for-a-file-larger-than-5gb
+
+aws multipart_chunksize:
+  https://docs.aws.amazon.com/cli/latest/topic/s3-config.html#multipart-chunksize
+
+boto3 multipart_threshold:
+  https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/s3.html#boto3.s3.transfer.TransferConfig
